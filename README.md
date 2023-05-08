@@ -1,6 +1,7 @@
 ## Fine-tuning BERT-based models for classification problems
 
-#Introduction
+# Introduction
+
 I wanted to fine-tune a BERT-based model for a classification task in one of my projects and found the existing tutorials to be too confusing, as the tutorials on huggingface focused on non-classification problems and training models for sequence prediction. In this tutorial, I would like to detail the steps for fine-tuning models for a classification problem. Fine-tuning BERT for classification is a multi-step process. Below are the general steps:
 
 *Further pre-train BERT on within-task training data or in-domain data.
@@ -17,7 +18,7 @@ I wanted to fine-tune a BERT-based model for a classification task in one of my 
 
 *Custom classification layer(s) on top of the base BERT model being non-trainable (frozen)
 
-#Example 
+# Example 
 In the example below I will provide code to use for this task. The most important aspect of fin-tuning for classification models is to keep in mind to use the BertForSequenceClassification class instead of the ones presented on the huggingface website for other tasks. Below are the instructions to this tasks with Keras and the cola dataset.
 
 First let's load the data
@@ -56,6 +57,6 @@ model.compile(optimizer=Adam(3e-5))
 model.fit(tokenized_data, labels)
 ```
 
-#conclusion
+# Conclusion
 
 I tried to address a confusion I ran into while looking at Huggingface tutorials in this project.
