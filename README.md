@@ -58,7 +58,7 @@ model.fit(tokenized_data, labels)
 
 # Conclusion
 
-In conclusion, this tutorial aimed to provide clear guidance on fine-tuning BERT-based models for classification problems, as existing tutorials often focused on non-classification tasks or sequence prediction. The multi-step process for fine-tuning BERT was outlined, including further pre-training on within-task or in-domain data, incorporating multi-task learning if applicable, and finally fine-tuning BERT specifically for the target task.
+This tutorial aimed to provide clear guidance on fine-tuning BERT-based models for classification problems, as existing tutorials often focused on non-classification tasks or sequence prediction. The multi-step process for fine-tuning BERT was outlined, including further pre-training on within-task or in-domain data, incorporating multi-task learning if applicable, and finally fine-tuning BERT specifically for the target task.
 
 Two approaches were highlighted for fine-tuning BERT: further pre-training the base model and adding custom trainable classification layers on top. The example code demonstrated the implementation of BERT fine-tuning for a classification task using the Keras framework and the CoLA dataset.
 
