@@ -6,17 +6,16 @@ I wanted to fine-tune a BERT-based model for a classification task in one of my 
 
 * Further pre-train BERT on within-task training data or in-domain data.
 
-* Optional fine-tuning BERT with multi-task learning if several related tasks are available.
+* Fine-tune BERT with multi-task learning if several related tasks are available.
 
 * Fine-tune BERT for the target task.
 
-There are multiple approaches to fine-tune BERT for the target tasks3. Here are some of them:
+There are multiple approaches to fine-tune BERT for the target tasks. Here are a couple of them:
 
 * Further Pre-training the base BERT model
 
-* Custom classification layer(s) on top of the base BERT model being trainable
+* Custom classification layers on top of the base BERT model being trainable
 
-* Custom classification layer(s) on top of the base BERT model being non-trainable (frozen)
 
 # Example 
 In the example below I will provide code to use for this task. The most important aspect of fin-tuning for classification models is to keep in mind to use the BertForSequenceClassification class instead of the ones presented on the huggingface website for other tasks. Below are the instructions to this tasks with Keras and the cola dataset.
