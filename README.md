@@ -63,3 +63,7 @@ This tutorial aimed to provide clear guidance on fine-tuning BERT-based models f
 Two approaches were highlighted for fine-tuning BERT: further pre-training the base model and adding custom trainable classification layers on top. The example code demonstrated the implementation of BERT fine-tuning for a classification task using the Keras framework and the CoLA dataset.
 
 By using the BertForSequenceClassification class from Huggingface and following the provided instructions, users can successfully adapt BERT for their classification tasks. This tutorial aimed to alleviate confusion and provide a straightforward path to fine-tuning BERT models for classification, empowering researchers and practitioners to leverage the power of BERT for their specific projects.
+
+
+### Author
+[Rey Sanayei](https://github.com/reys7899)
