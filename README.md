@@ -10,7 +10,7 @@ I wanted to fine-tune a BERT-based model for a classification task in one of my 
 
 * Fine-tune BERT for the target task.
 
-* There are multiple approaches to fine-tune BERT for the target tasks3. Here are some of them:
+There are multiple approaches to fine-tune BERT for the target tasks3. Here are some of them:
 
 * Further Pre-training the base BERT model
 
