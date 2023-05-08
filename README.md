@@ -18,7 +18,7 @@ There are multiple approaches to fine-tune BERT for the target tasks. Here are a
 
 
 # Example 
-In the example below I will provide code to use for this task. The most important aspect of fine-tuning for classification models is to keep in mind to use the BertForSequenceClassification class instead of the ones presented on the huggingface website for other tasks. Below are the instructions to this tasks with Keras and the cola dataset.
+In the example below I will provide code to use for this task. The most important aspect of fine-tuning for classification models is to keep in mind to use the BertForSequenceClassification class instead of the ones presented on the huggingface website for other tasks. Below are the instructions to this tasks with Keras and the CoLA dataset.
 
 First let's load the data
 ```
@@ -58,4 +58,8 @@ model.fit(tokenized_data, labels)
 
 # Conclusion
 
-I tried to address a confusion I ran into while looking at Huggingface tutorials in this project.
+In conclusion, this tutorial aimed to provide clear guidance on fine-tuning BERT-based models for classification problems, as existing tutorials often focused on non-classification tasks or sequence prediction. The multi-step process for fine-tuning BERT was outlined, including further pre-training on within-task or in-domain data, incorporating multi-task learning if applicable, and finally fine-tuning BERT specifically for the target task.
+
+Two approaches were highlighted for fine-tuning BERT: further pre-training the base model and adding custom trainable classification layers on top. The example code demonstrated the implementation of BERT fine-tuning for a classification task using the Keras framework and the CoLA dataset.
+
+By using the BertForSequenceClassification class from Huggingface and following the provided instructions, users can successfully adapt BERT for their classification tasks. This tutorial aimed to alleviate confusion and provide a straightforward path to fine-tuning BERT models for classification, empowering researchers and practitioners to leverage the power of BERT for their specific projects.
