@@ -20,7 +20,7 @@ There are multiple approaches to fine-tune BERT for the target tasks. Here are a
 # Example 
 In the example below I will provide code to use for this task. The most important aspect of fine-tuning for classification models is to keep in mind to use the BertForSequenceClassification class instead of the ones presented on the huggingface website for other tasks. Below are the instructions to this tasks with Keras and the CoLA dataset.
 
-First let's load the data
+First, let's load the data
 ```
 from datasets import load_dataset
 
